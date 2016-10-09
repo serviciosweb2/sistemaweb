@@ -1,0 +1,152 @@
+<!-- JavaScript -->
+<script src="<?php echo base_url()?>assents/js/reportes/rentabilidad.js"></script>
+        
+<!-- De xCharts -->
+<script src="<?php echo base_url()?>assents/D3/d3.js"></script>
+<script src="<?php echo base_url()?>assents/D3/xcharts.js"></script>
+        
+<!-- De Datepicker -->
+<script src="<?php echo base_url()?>assents/js/moments.js"></script>
+<script src="<?php echo base_url()?>assents/js/daterangepicker.js"></script>
+
+<!-- CSS links -->
+<!-- De xCharts -->
+<link rel="stylesheet" href="<?php echo base_url('assents/css/reportes/xcharts.css')?>"/>
+<!-- De Datepicker -->
+<link rel="stylesheet" href="<?php echo base_url('assents/css/reportes/daterangepicker.css')?>" >
+
+
+<!-- ver -->
+<style ></style>
+
+
+
+<div id="graficos_impresion" class="col-md-12 col-xs-12">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-9 col-xs-9">
+                <h1><?php echo lang('gastoseingresos')?></h1>
+            </div>
+            <div class="col-md-3 col-xs-3" style="margin-top:15px;min-height: 95px">
+                <div>
+                    <span><?php echo lang('filtrar_fechas');?></span>
+                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function() {
+
+                            function cb(start, end) {
+                                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                            }
+                            cb(moment().subtract(29, 'days'), moment());
+
+                            $('#reportrange').daterangepicker({
+                                ranges: {
+                                   'Today': [moment(), moment()],
+                                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                                }
+                            }, cb);
+
+                        });
+                    </script>
+            </select>
+        </div>
+        <div id='fechas' style="display: none">
+            <div class='input-group date' style="margin-top: 20px;   margin-bottom: 10px;">
+                <input type='text' class="form-control" id="fecha_desde">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                <input type='text' class="form-control" id="fecha_hasta" disabled="true">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+        </div>
+        <div id='periodoFechas' style="display: none; margin-top: 20px;" class='input-group date'>
+            <select id="selectPeriodoFechas_meses">
+                <option value="0"><?php echo lang('mes');?></option>
+                        <option value="01"><?php echo lang('enero');?></option>
+                        <option value="02"><?php echo lang('febrero');?></option>
+                        <option value="03"><?php echo lang('marzo');?></option>
+                        <option value="04"><?php echo lang('abril');?></option>
+                        <option value="05"><?php echo lang('mayo');?></option>
+                        <option value="06"><?php echo lang('junio');?></option>
+                        <option value="07"><?php echo lang('julio');?></option>
+                        <option value="08"><?php echo lang('agosto');?></option>
+                        <option value="09"><?php echo lang('septiembre');?></option>
+                        <option value="10"><?php echo lang('octubre');?></option>
+                        <option value="11"><?php echo lang('noviembre');?></option>
+                        <option value="12"><?php echo lang('diciembre');?></option>
+                    </select>
+                    <select id="selectPeriodoFechas_anios" disabled="true">
+                        <option value="0"><?php echo lang('año');?></option>
+
+                        <?php for ($i = 2000; $i <= 2030; $i++){?>
+                        <option value=<?php echo $i?>><?php echo $i?></option>
+                        <?php }?>
+                    </select>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>    
+            </div>
+            <div class="col-md-12 col-xs-12" style="margin-bottom: 15px;">
+                <figure style="width: 100%; height: 400px;" id="myChart"></figure>
+            </div>
+            
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-6 col-xs-6" id="totalIngresos" style="text-align: right;"></div>
+                <div class="col-md-6 col-xs-6" id="totalGastos" style="text-align: left;"></div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="col-md-6 col-xs-6" id="" style="text-align: right;"></div>
+                <div class="col-md-6 col-xs-6" id="totalRentabilidad" style="text-align: left;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-md-5 col-xs-5">
+            <h1><?php echo lang('gastos')?></h1>
+            <div id="gastos" style="width: 100%;height: 300px;"></div>
+            <div id="pieHoverGastos" style="height: 15px;"></div>
+            <div id="dataGastos" style="display: none;"></div>
+        </div>
+        
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-6 col-xs-6">
+            <h1><?php echo lang('ingresos')?></h1>
+            <div id="ingresos" style="width: 100%;height: 300px;"></div>
+            <div id="pieHoverIngresos" style="height: 15px;"></div>
+            <div id="dataIngresos" style="display: none;"></div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-md-12 col-xs-12">
+            <h1><?php echo lang('Rentabilidad')?></h1>
+            <div id="rentabilidad" style="width: 100%;height: 200px;"></div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class='input-group date'>
+            <select id="periodo">
+                <option value="<?php echo lang('periodo');?>"><?php echo lang('periodo');?></option>
+                
+                <?php for ($i = 2000; $i <= 2030; $i++){?>
+                <option value=<?php echo $i?>><?php echo $i?></option>
+                <?php } ?>
+            </select>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+        </div>
+    </div>
+    <div id="dataRentabilidad" style="display: none;"></div>
+</div>

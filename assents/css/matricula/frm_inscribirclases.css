@@ -1,0 +1,16 @@
+
+    #contenedorGeneral{
+        min-height: 350px !important;
+    }
+    
+    #errores{
+        
+        display:none;
+    }
+ 
+   
+    
+   
+    .form{
+        display: none;
+    }

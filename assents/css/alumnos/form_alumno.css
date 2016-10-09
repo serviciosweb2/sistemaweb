@@ -1,0 +1,63 @@
+ 
+    
+    .inputTable{
+        
+    }
+    
+     input[readonly].inputTable{
+/*        border:none!important;
+        background-color: none!important;
+       background: none !important;*/
+    }
+    
+   .datepicker{ display: block;
+
+z-index: 8040!important;
+   }
+   
+   .tab-content{
+       padding: 30px 12px !important;
+   }
+   
+   .chosen-results{
+       max-height: 65px !important;
+   }
+   
+   
+   #listadoResponsables select+ .chosen-container .chosen-drop {
+   // border-bottom: 0;
+    border-top: 1px solid #aaa;
+    top: auto;
+    bottom: 40px;
+}
+
+
+#tablaRazonsocial select+ .chosen-container .chosen-drop {
+   // border-bottom: 0;
+    border-top: 1px solid #aaa;
+    top: auto;
+    bottom: 40px;
+}
+
+
+
+
+
+select[name="comonosconocio"] + .chosen-container .chosen-drop  {
+     border-top: 1px solid #aaa;
+    top: auto;
+    bottom: 40px;
+}
+
+
+
+
+.paging_bootstrap{
+    margin-top: 1% !important;
+}
+
+
+#ui-datepicker-div{
+    
+    z-index: 15000 !important;
+}

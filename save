@@ -1,0 +1,1119 @@
+[33mcommit 81bc7c09d984d80963e8b69b56b306e179eb65f5[m
+Merge: 2b1a822 6664f3d
+Author: mpajon <sistemas6@iga-la.net>
+Date:   Fri Oct 16 13:21:22 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit 2b1a822295fe03c68cd885623308f834d9f8bb7c[m
+Author: mpajon <sistemas6@iga-la.net>
+Date:   Fri Oct 16 13:20:34 2015 -0300
+
+    Eliminada la columna de iniciado del reporte de cupos disponibles.
+
+[33mcommit 6664f3da82d68509c4b5db60cf9089ea8923d0c4[m
+Merge: cbea5f6 873b6b0
+Author: Alfonso Rognoni <sistemas7@iga-la.net>
+Date:   Fri Oct 16 12:21:57 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit cbea5f6fab85d3756052364f2ef1e5fcbe0a3bcb[m
+Author: Alfonso Rognoni <sistemas7@iga-la.net>
+Date:   Fri Oct 16 12:19:42 2015 -0300
+
+    ticket 5243 - correr script   test/actualizaEstadoAcademico
+
+[33mcommit b156c2ba8a595179601300029185055be72ed270[m
+Author: Alfonso Rognoni <sistemas7@iga-la.net>
+Date:   Fri Oct 16 12:16:31 2015 -0300
+
+    ticket 5243 - correr script   test/actualizaEstadoAcademico
+
+[33mcommit 873b6b09f33fb96bcbe5c61ae5fb76f8595e4519[m
+Merge: 1d6d97c ed92993
+Author: Manuel Pajón <sistemas6@iga-la.net>
+Date:   Fri Oct 16 10:44:35 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+    
+    Conflicts:
+    	application/controllers/test.php
+
+[33mcommit 1d6d97cb70e4e58937db40f84982d6ba1c67277b[m
+Author: Manuel Pajón <sistemas6@iga-la.net>
+Date:   Fri Oct 16 10:42:53 2015 -0300
+
+    Agregado el reporte de cupos disponibles para vender.
+
+[33mcommit ed9299382debe7ffc8dc6052d936c46f8a146227[m
+Author: Alfonso Rognoni <sistemas7@iga-la.net>
+Date:   Fri Oct 16 09:18:32 2015 -0300
+
+    fix error en controllers asistencias del commit anterior
+
+[33mcommit 7f9ccbe2c26f07ebd30d676e0916eb8913dabea0[m
+Author: Alfonso Rognoni <alfonsorognoni@gmail.com>
+Date:   Thu Oct 15 18:07:55 2015 -0300
+
+    ticket 4958
+
+[33mcommit fbff7d8995b406f7ed6a4b5262596e227dce4037[m
+Merge: 8c4417f 1b981ec
+Author: Alfonso Rognoni <sistemas7@iga-la.net>
+Date:   Wed Oct 14 13:30:01 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit 8c4417f619f43b103220dff15bddf37b33f82645[m
+Author: Alfonso Rognoni <sistemas7@iga-la.net>
+Date:   Wed Oct 14 13:26:47 2015 -0300
+
+    tickets 5221 y 5202
+
+[33mcommit 1b981ec6649b260cdf5fb91d6bd7cc2942dd11e2[m
+Merge: e951aa1 50387e9
+Author: Manuel Pajón <sistemas6@iga-la.net>
+Date:   Tue Oct 13 17:34:19 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit e951aa16d8a0144e6357cebc8e8d97f69b4280ae[m
+Author: Manuel Pajón <sistemas6@iga-la.net>
+Date:   Tue Oct 13 17:32:04 2015 -0300
+
+    Arreglado un error en los reportes de asistencias. Ticket #053-052018
+
+[33mcommit 50387e9b120239ef5a393f1ea3eebb6bc724be98[m
+Author: Alfonso Rognoni <sistemas7@iga-la.net>
+Date:   Tue Oct 13 13:10:47 2015 -0300
+
+    ticket 5185
+
+[33mcommit ed0c5e570b1d5cb4fb7431e86aeb7fb8759034f7[m
+Author: Manuel Pajón <sistemas6@iga-la.net>
+Date:   Tue Oct 13 12:29:22 2015 -0300
+
+    Ticket 053-05173.
+    Se modifico el formulario de carga de aspirantes.
+    Se agregaron metodos al aspirante para manterner limpias las tablas de telefonos.
+    Se modifico el comportamiento de los metodos que guardan los aspirantes (nuevos y modificados).
+
+[33mcommit 6067b0fa0b18f77f8b6b7896a81656f6ff98bbd6[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Oct 13 10:13:11 2015 -0300
+
+    agrega filtros en ws intranet listado ctacte pendientes (tipo deuda, id_curso)
+
+[33mcommit 8b13ad35b6835d62ba1b99c5b36d96a4a15f98a3[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Oct 9 16:32:58 2015 -0300
+
+    implementa captura por camara web para los alumnos e impresion de la matricula
+
+[33mcommit 15ecd0a6f961cb949c175247f54410b0e1c71a9b[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 8 12:18:18 2015 -0300
+
+    correccion en campo busqueda sSearch
+
+[33mcommit 66aba74d44f47bdc1c5912caba54e94b4de10073[m
+Author: Manuel Pajón <sistemas6@iga-la.net>
+Date:   Thu Oct 8 11:28:40 2015 -0300
+
+    Arreglado el ticket N° 053-05219, se cambio un string de localizacion y los anchos de las columnas del reporte de facturas.
+
+[33mcommit 4b4a9e2913ea88fadbdda02777cc375cb7080d94[m
+Merge: b2c6766 e26f9cc
+Author: root <sistemas@iga-la.net>
+Date:   Tue Oct 6 14:59:02 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit b2c67666d675a045944115c17df0cab78e0fa507[m
+Author: root <sistemas@iga-la.net>
+Date:   Tue Oct 6 14:58:38 2015 -0300
+
+    database dev desarrollo
+
+[33mcommit e26f9ccbf71233aa525066766bdc67d884449bec[m
+Author: Sistemas <Sistemas@192.168.1.132>
+Date:   Tue Oct 6 13:10:51 2015 -0300
+
+    Se corrigió error en orden de imputación de 'nuevo cobro' y 'facturar y cobrar'. También se cambió el pass gral.
+
+[33mcommit dce2a2876fe51008a38f73a38fc22b8870d169aa[m
+Author: root <sistemas@iga-la.net>
+Date:   Tue Oct 6 09:46:14 2015 -0300
+
+    nuevo db desarrollo
+
+[33mcommit a70362ee342ab832574e03a1405aaf69e9a5551b[m
+Author: Sistemas <Sistemas@192.168.1.181>
+Date:   Mon Oct 5 12:26:34 2015 -0300
+
+    Se comentó el método baja_matricula_automatica de crons.php. Solo se comentó el contenido de la función por si llega a ser necesario reactivarlo.
+
+[33mcommit e21a04f5e1999113a523083f82d0aa6cf17dac8a[m
+Author: Sistemas <Sistemas@192.168.1.181>
+Date:   Mon Oct 5 10:17:58 2015 -0300
+
+    Modificación de lang en PT.
+
+[33mcommit f3ac5156124b94aff941cfb2a75387c8a257e362[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Oct 5 09:49:34 2015 -0300
+
+    cange database
+
+[33mcommit 2c84f22a97037264a321c6550c33cc17c8bce9fc[m
+Author: Sistemas <Sistemas@192.168.1.181>
+Date:   Mon Oct 5 08:43:07 2015 -0300
+
+    Ahora no existe más el servidor réplica de solo lectura.
+
+[33mcommit d71146aad55ba6bd6588aade904fc4798e892b04[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Oct 2 07:52:44 2015 -0300
+
+    correccion en calculo de porcentaje a facturar por puntos de venta
+
+[33mcommit c223af2c6e9010bc802c79bd51c971be4ea29f77[m
+Merge: 95ed210 58b29f6
+Author: root <sistemas@iga-la.net>
+Date:   Thu Oct 1 18:24:15 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit 95ed21006e77c913a1001af39463b969dac3aa1b[m
+Author: root <sistemas@iga-la.net>
+Date:   Thu Oct 1 18:21:06 2015 -0300
+
+    fix caja
+
+[33mcommit 58b29f63889694c235ab489fdd007cddf328fdc6[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 1 16:11:31 2015 -0300
+
+    modificacion impresion factura producto brasilia
+
+[33mcommit 85b0d7d1459116cf0e4317db6d0fe6bb2ee84f14[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 1 15:03:57 2015 -0300
+
+    correccion en calculo de totales en facturar en serie
+
+[33mcommit a1a119ce177097a6e63c950f50c63d2b1e91be83[m
+Merge: 865a4fc 95a5619
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 1 12:54:49 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit 865a4fc920dc78d63e45b2a1056cce420fdff051[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 1 12:51:19 2015 -0300
+
+    agrega punto de venta y facturante en el reporte de facturas
+
+[33mcommit 95a56193dc1d2c28a9be0c891e3cc912bc039eb7[m
+Merge: 302f229 c100ac9
+Author: Sistemas <Sistemas@192.168.1.181>
+Date:   Thu Oct 1 12:25:25 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit c100ac902e471a11798f797a9201111baa4bfde8[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 1 12:24:54 2015 -0300
+
+    agrega filtro medio cobro en facturacion serie
+
+[33mcommit 302f2292b8e9fcf39b5684c1d16cb4acb78dd08a[m
+Author: Sistemas <Sistemas@192.168.1.181>
+Date:   Thu Oct 1 12:20:32 2015 -0300
+
+    Correcciones varias en impresión de matrículas (ticket 5165). También se forzó la impresión de las observaciones por defecto.
+
+[33mcommit d4bae4b5f205b9d6051a75f0ca6afb47b99e603e[m
+Merge: 4f7c1a7 8bc4303
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 1 08:23:23 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit 4f7c1a72dd0745feb36631141a664e68ef7e010f[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Oct 1 08:22:17 2015 -0300
+
+    nueva url
+
+[33mcommit 8bc430367161404cc5a3cdb63bf7a3158064f87b[m
+Author: Sistemas <Sistemas@192.168.1.181>
+Date:   Wed Sep 30 15:43:24 2015 -0300
+
+    Modificaciones para activar el scroll en el form "Administración -> Caja -> Nuevo movimiento de caja''.
+
+[33mcommit f062969fb005efade8df79ad46e413d2a8f4cfbc[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Wed Sep 30 11:33:48 2015 -0300
+
+    corregido error en subquery de listaraspirantedatatable
+
+[33mcommit 49670229021d20afc33bc33ca8b8c3b0b3126044[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 30 11:19:59 2015 -0300
+
+    agrega medio de pago en factura serie
+
+[33mcommit 08b246b9783f99bdca3177a1a1266329fcac5f3a[m
+Merge: e605878 6d46afb
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 30 10:49:13 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit e6058789d874b9bf67896405e8450a80f661f949[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 30 10:47:02 2015 -0300
+
+    Se habilitó la transferencia de cajas cuando el usuario tiene menos de dos cajas abiertas. También se solucionó el problema desde JS.
+
+[33mcommit 6d46afb15e975572cc0ce2323dc3f829556aa5b4[m
+Merge: 2c1aa51 7248d10
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 30 09:43:47 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit 2c1aa5145d7a295af21edb297dae7d2918dd16e9[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 30 09:42:35 2015 -0300
+
+    agrega informacion adicional
+
+[33mcommit 7248d103549555da6fb1add132d2a14e85ffc636[m
+Merge: 3c6353e 547186f
+Author: root <sistemas@iga-la.net>
+Date:   Wed Sep 30 08:55:45 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit 3c6353e52ce348102c64a6b2c83d6324a63ae864[m
+Author: root <sistemas@iga-la.net>
+Date:   Wed Sep 30 08:53:51 2015 -0300
+
+    caja
+
+[33mcommit 547186fdcff5a064c82ce361db963f37caec2d50[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 30 08:30:48 2015 -0300
+
+    agrega impresion impuesto IBPT
+
+[33mcommit 1768e9e81991a3d608fe4df652fb60c3abd8f469[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 29 13:32:28 2015 -0300
+
+    correccion en configuracion de puntos de venta
+
+[33mcommit e1e1688a26b4686f7ac3b2c4fe3bf3f8951c3caa[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 29 12:18:09 2015 -0300
+
+    correccion en validacion de cfop en function gertMaquetado
+
+[33mcommit 6467092f9ee53b1867fca594ccf57d441345b18d[m
+Merge: 5056b75 8e53e37
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 29 09:38:04 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit 5056b75725da14978f64bf63ab24d7117a31e9aa[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 29 09:37:07 2015 -0300
+
+    vuelve a la version anterior el reporte de facturas
+
+[33mcommit 8e53e3748b4cd18e25a2f94e0e1be3cbb3a4bd4d[m
+Author: root <sistemas@iga-la.net>
+Date:   Tue Sep 29 09:01:30 2015 -0300
+
+    caja
+
+[33mcommit 92803ffda9987e95d8e30c81791c84537546a114[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 29 09:00:22 2015 -0300
+
+    commit de recuperacion
+
+[33mcommit 188a86808adfe0d1f936c4728efb125d942d7cef[m
+Author: root <sistemas@iga-la.net>
+Date:   Tue Sep 29 08:49:52 2015 -0300
+
+    fix caja
+
+[33mcommit b693a427729caf88461cfa265645b6c3091fa39e[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 29 07:48:09 2015 -0300
+
+    correccion en javascript (canvas is not defined)
+
+[33mcommit ab52252ba9ec33f8c964311f0163dc8be9994e72[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Sep 28 17:29:32 2015 -0300
+
+    cambia razon social de facturas pendientes y en error al modificar la condicion default de facturacion de un alumno
+
+[33mcommit ad424aec74ee7c2303f24c5c39a92b2df770f022[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Sep 28 16:06:25 2015 -0300
+
+    validacion de tipo de documento en la facturacion
+
+[33mcommit 8820586c8504537ab4e08bc4322f03bf1bff2d0f[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Mon Sep 28 16:01:17 2015 -0300
+
+    Se arregló el orden por fecha de vencimiento en el form nuevo cobro.
+
+[33mcommit 25c5f0a8090b7baf92caf223ab56674fa2ad018d[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Mon Sep 28 11:57:00 2015 -0300
+
+    Se corrigió error al validar que se hayan pasado las asistencias antes de pasar de comisión a un alumno. No tenía en cuenta que los horarios pueden ser dados de baja.
+
+[33mcommit bbc8f3560ab0579d17d1f546dee827e3635b89b4[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Sep 28 11:35:56 2015 -0300
+
+    correccion en formato de telefono para emison de nota fiscal de producto
+
+[33mcommit 12571969c3784b3074c9dd8705b3ac1c677a0c7f[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Sep 28 10:01:24 2015 -0300
+
+    agrega configuracion de cfop para persona fisica y juridica entre estados
+
+[33mcommit 2daa31be1ff54171a02b2e6b8fa10a063cc61233[m
+Merge: 4ae2fd4 27ec635
+Author: francogiova <sistemas4@iga-la.net>
+Date:   Mon Sep 28 09:00:59 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit 27ec63581abdf5feebe19d8b2ca44bd48879785c[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Sep 28 08:59:22 2015 -0300
+
+    agrega configuracion de cfop para persona fisica y juridica entre estados
+
+[33mcommit 4ae2fd4ed08d978a234939a892285de4ba808781[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Mon Sep 28 08:57:55 2015 -0300
+
+    modificacion ticket 5149
+
+[33mcommit c2674608efbb58748cf0201d40c89743e14221ad[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Sep 28 08:36:45 2015 -0300
+
+    agrega configuracion de cfop para persona fisica y juridica entre estados
+
+[33mcommit e1cf605f51a4a6996150bd111b1f7539743b82e6[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Mon Sep 28 08:31:24 2015 -0300
+
+    ticket 5186 ocultar plan
+
+[33mcommit d073d9814fbe6a76800aa586b1cb693b2c4765ed[m
+Merge: 8ca9c60 747d9f4
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 25 15:40:17 2015 -0300
+
+    Merge origin/development into development
+
+[33mcommit 8ca9c607b0516e9630e386a48442f8cd0ecc9b27[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 25 15:35:30 2015 -0300
+
+    correccion de impresion de factura electronica y nueva configuracion de prestador_toolsnfe
+
+[33mcommit da0164412f8dc9bb88c7c4f383a0bf3001fa38c0[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 25 15:32:44 2015 -0300
+
+    correccion de impresion de factura electronica y nueva configuracion de prestador_toolsnfe
+
+[33mcommit 747d9f4682fdee87e07bd4e6acaaa1a6a2fc4302[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Fri Sep 25 08:10:18 2015 -0300
+
+    agregado de exportar e imprimir y filtros avanzados en comisiones
+
+[33mcommit b01cff541a7f7fc03c47b0c2a66c7f6b99ae8695[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Thu Sep 24 16:02:57 2015 -0300
+
+    Corrección en parámetro por defecto en el método Model_reportes->getDataReporteRentabilidad(). Antes tenía hardcodeado el año 2015, ahora recibe null por defecto y desde el método se setea el año actual si no se define el año en la llamada.
+
+[33mcommit 3df5fbc5a4f248046b2905891734363795fcd336[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 24 11:28:03 2015 -0300
+
+    correccion de idioma en como nos conocio
+
+[33mcommit 0d27c70028613d3503a9e3220c577a757d6e6b24[m
+Author: francogiova <sistemas4@iga-la.net>
+Date:   Thu Sep 24 08:40:40 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit cfdcf17543353121a40fbab5c08cdab1aacdf41a[m
+Author: francogiova <sistemas4@iga-la.net>
+Date:   Thu Sep 24 08:40:28 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 5b6272da14f0084c0bdd1cb6d9d381352e814354[m
+Author: francogiova <sistemas4@iga-la.net>
+Date:   Thu Sep 24 08:40:15 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 7587b1f02ce23c13622f166df835dc954a808d3a[m
+Author: francogiova <sistemas4@iga-la.net>
+Date:   Thu Sep 24 08:40:02 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit ffc8746a08436aea10f2da1724ba1909ca575930[m
+Author: francogiova <sistemas4@iga-la.net>
+Date:   Thu Sep 24 08:39:46 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 44e8b150e99380e772304193f38f774545f637c1[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 23 16:07:54 2015 -0300
+
+    Correcciones en recuperatorios de examenes parciales.
+
+[33mcommit a85cf309829a9bb34476e56ece02dd188fdd4e82[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 18 16:30:22 2015 -0300
+
+    restore de function setImagen and getImagen
+
+[33mcommit b1ca4b544b9997eca50146027488e09a731f5b4f[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 16 16:56:36 2015 -0300
+
+    Correcciones en es_lang.php y pt_lang.php.
+
+[33mcommit de9631436eab754c109fec2b0c96a6bf58f7a21b[m
+Merge: 3fa54f2 10abc3b
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 16 16:33:24 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+    
+    Conflicts:
+    	application/language/es/es_lang.php
+    	application/language/pt/pt_lang.php
+
+[33mcommit 10abc3bd3c4caf90b0b828248285c6f33b74d705[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 16 15:50:57 2015 -0300
+
+    ABM cantidad de clases por plan academico por materia y agrega propiedad tipo clase
+
+[33mcommit 3fa54f27b9ca0f9f2cfc1b72874888d113c502fb[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 16 12:04:42 2015 -0300
+
+    Se agregó una restricción para que algunos campos del formulario de modificación de examen recuperatorio de parcial no se puedan alterar, ya que esto generaba inconsistencias. También se agregó el campo examen padre para los recuperatorios de parciales y se modificó la inscripción a los mismos para que solo puedan inscribir alumnos que no hayan aprobado el examen padre o bien, que no hayan asistido al mismo. Se quitó el acceso a inbox externa desde consultas web.
+
+[33mcommit 3da29dc8f42b28cd7f601c001703e57583e1a784[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 16 11:04:30 2015 -0300
+
+    solo se pueden editar movimientos de caja particulares
+
+[33mcommit edff74f0a52b69585fe21084cc6a7a561dc46833[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 16 10:36:14 2015 -0300
+
+    agrega traduccion para los motivos de movimiento de caja
+
+[33mcommit bdd4bdca0b02e40d8a05a84bfc0728c6e9e91d21[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 16 10:04:39 2015 -0300
+
+    correccion de talles para alumnos
+
+[33mcommit 17ddabb3e756eb7a841564512139c7d56beb2e5d[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Wed Sep 16 08:46:10 2015 -0300
+
+    corrijo model_alumnos.php
+
+[33mcommit 370f9092159a29f537c2e57dfa71f6e035cf2fa3[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Tue Sep 15 10:55:57 2015 -0300
+
+    conflicto con heads
+
+[33mcommit fd964f7551342a387a7a5ae99ff676f4896f4a21[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 10:02:37 2015 -0300
+
+    Revert "Revert "Revert "Agregado de importar/exportar y nuevos filtros de busqueda"""
+    
+    This reverts commit eb074fff3df9cbdac6059eda06ac53aafa86c03e.
+
+[33mcommit eb074fff3df9cbdac6059eda06ac53aafa86c03e[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 10:02:06 2015 -0300
+
+    Revert "Revert "Agregado de importar/exportar y nuevos filtros de busqueda""
+    
+    This reverts commit 0afe35348cdca0f7d860c95d1c8ac273bb1a972b.
+
+[33mcommit 0afe35348cdca0f7d860c95d1c8ac273bb1a972b[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 10:01:41 2015 -0300
+
+    Revert "Agregado de importar/exportar y nuevos filtros de busqueda"
+    
+    This reverts commit 7ae2e46aa0cc0d73f7680384ad197d6d00b3729a.
+
+[33mcommit 7ae2e46aa0cc0d73f7680384ad197d6d00b3729a[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 09:52:52 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit fee13bdc79c9ca7ed0edc76a47836589f86884c3[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 09:50:09 2015 -0300
+
+    Revert "Agregado de importar/exportar y nuevos filtros de busqueda"
+    
+    This reverts commit 009c030bc85b8a80cde9d47247faa5b0f5fb89be.
+
+[33mcommit 009c030bc85b8a80cde9d47247faa5b0f5fb89be[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 08:03:54 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 3e976206df77ee388e4b6ad258456dc2256b7c89[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Tue Sep 15 09:42:05 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+    Conflicts:
+    	assents/js/alumnos/alumnos.js
+
+[33mcommit 1f9e2724abf94cd15caedfa3b1a399a32b708aac[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Tue Sep 15 09:37:15 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+    Conflicts:
+    	assents/js/alumnos/alumnos.js
+
+[33mcommit f9ecd86c57b198a8f034c076dfbc0282560c21b0[m
+Author: FrancoGiova <sistemas4@iga-la.net>
+Date:   Tue Sep 15 09:36:21 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+    
+    Conflicts:
+    	application/language/es/es_lang.php
+    	application/libraries/alumnos/Valumnos.php
+    	application/models/model_alumnos.php
+    	application/views/alumnos/vista_alumnos.php
+
+[33mcommit 6642600073e79c77791c7d021a3443249e527895[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 09:33:06 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 33aad46d9473642a6d5e63b3dad4bff3bf98bbd2[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 09:09:57 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 6b6c46ccaacbae54d9d78d3a35a4bb4535d345f2[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 09:08:26 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit dbc7cfaced286434f506e228d9b4c6d67c4e7ef3[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 09:01:26 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 23c45b06c1483754ca36a7986be5344fb3275aef[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 08:43:41 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 05092c673cf1d0f755ab34b7216817f219fd3c15[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 08:42:37 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit 44811dcb7b7b5831881063a30ca3f2d6cc6e22dc[m
+Author: martin <martin@martin>
+Date:   Tue Sep 15 08:25:08 2015 -0300
+
+    Agregado de importar/exportar y nuevos filtros de busqueda
+
+[33mcommit bcbc7af45e0d6e53ebff651dc1ee2291f74d8ec4[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 11 15:36:50 2015 -0300
+
+    correccion de talles para alumnos
+
+[33mcommit b70597324f20e17ae2bb430fb4960bb26add24f0[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 11 13:26:59 2015 -0300
+
+    cambia filtro betwen por fecha_desde y/o fecha_hasta en reporte de rentabilidad
+
+[33mcommit f829bdc3417f0620d879fb215828bc6432c98c5e[m
+Author: Aquiles Gonzalez <>
+Date:   Fri Sep 11 10:56:53 2015 -0300
+
+    agrega totales al exportar de cobros.csv
+
+[33mcommit ea957623bb27331895306aec8b19a3b328451f92[m
+Author: Aquiles Gonzalez <>
+Date:   Fri Sep 11 10:33:28 2015 -0300
+
+    agrega totales al exportar de cobros.csv
+
+[33mcommit b4f95c2bdb24f041a49eb2b8616a62b12f0c3de9[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 11 10:04:53 2015 -0300
+
+    agrega totales al exportar de cobros.csv
+
+[33mcommit 830b025ba5475210e70061795c9eacb6d1c36d61[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 11 09:06:37 2015 -0300
+
+    reporte de alumnos activos por curso
+
+[33mcommit 3bda58f71c7fa54755d9a99c4811fbade76c5bca[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Fri Sep 11 08:30:02 2015 -0300
+
+    regenera la clases
+
+[33mcommit c328e3ffca93103f59f3db9e3d7295493c737a61[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 10 10:56:34 2015 -0300
+
+    correccion de fecha nacimiento en alumnos, fecha hasta fecha actual y año default = año actual
+
+[33mcommit 5432dd4ae5b5290664f89281b144ae45dbef53ee[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 10 10:24:58 2015 -0300
+
+    correccion en mostrar - ocultar razon social al imprimir factura responsable inscripto
+
+[33mcommit 05e14bd68ecb05b0086bf52f504c21b8ee8d90d2[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 10 09:13:41 2015 -0300
+
+    correccion del exportar de cobros
+
+[33mcommit a4265a67b12b146c1d4d818f30a76b8337520f57[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 10 08:08:08 2015 -0300
+
+    cambia indice anular_cobro por anular_factura en facturas
+
+[33mcommit 05f183760ddce56bbab1b6fc49eccf60bfde1e54[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 9 09:13:16 2015 -0300
+
+    Implementación para que los alumnos puedan cancelar las inscripciones a examenes desde el campus.
+
+[33mcommit 3a34856e7f192db299d359b20349d52cd5845362[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 8 16:53:12 2015 -0300
+
+    agrega campo descripcion en reporte de facturacion
+
+[33mcommit 46c3f887903233e525dd52dbad109526135c2239[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 8 15:08:18 2015 -0300
+
+    quita function duplicada
+
+[33mcommit 9ecfc7c097fe110fb2a12e0e4e580ae27fff1df7[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 3 11:54:53 2015 -0300
+
+    cambia tamaño de la foto en la matricula
+
+[33mcommit 5326ce511e495bdce77a02547eb00128a3ce3930[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 3 11:54:34 2015 -0300
+
+    regenera function getcantidadclases
+
+[33mcommit 3978a87401bed214b32d956c5ad2995f532dcc3f[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 15:51:21 2015 -0300
+
+    foto por webcam e impresion de foto en matricula
+
+[33mcommit c31eeab8a2229cd88dfef0344398c6b06162e198[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 15:49:54 2015 -0300
+
+    foto por webcam e impresion de foto en matricula
+
+[33mcommit a4cd7043573d0a6a464164ab2b37914c15e42ff6[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 08:12:21 2015 -0300
+
+    cambia configuracion access key y secret key
+
+[33mcommit 6ff2827f79f89df542740bb991b97ae5ae739ff1[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 1 14:24:05 2015 -0300
+
+    impresion de matriculas teniendo en cuenta
+
+[33mcommit 7f351a80f627d60d671ed3cae0d48c46217aeeb2[m
+Author: Sistemas5 <Sistemas5@192.168.1.155>
+Date:   Tue Sep 1 12:13:02 2015 -0300
+
+    tgest
+
+[33mcommit 63f203b71c817a8c039f9686955c80b3b5aac3fb[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 1 11:24:10 2015 -0300
+
+    agrega metodos para cntidad de clases
+
+[33mcommit 2c76d87ea5b0e56ca2c91ac22a706dc384e2eb7e[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 1 09:48:08 2015 -0300
+
+    descripcion de ctacte teniendo en cuenta venta por clases
+
+[33mcommit fe31873a3b29afdb0f939452d129ad331c880602[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Tue Sep 1 09:47:43 2015 -0300
+
+    descripcion de ctacte teniendo en cuenta venta por clases
+
+[33mcommit 3ceb0b5b4b21dec486514cba50b207aa3bf655f5[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Aug 31 17:06:37 2015 -0300
+
+    separa materiales y documentacion a entregar en filiales (documentacion_filiales y materiales_filiales)
+
+[33mcommit 4a83b30008093990e05250b84a10144ec665f13d[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Thu Sep 3 15:23:33 2015 -0300
+
+    Implementación para validar si se cargaron las notas al cambiar a un alumno de comisión desde matrículas.
+
+[33mcommit 2bc9b75abcf5b3c20ebe6f35aa16a8df9b088bda[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Thu Sep 3 09:49:11 2015 -0300
+
+    agrega comentario de prueba
+
+[33mcommit 7f05a0ae640f4339af000496371ce52956a24a19[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Thu Sep 3 09:31:22 2015 -0300
+
+    fix database desarrollo
+
+[33mcommit d45b185f5e85f69b88c70e6311202b37f4ccfb89[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Thu Sep 3 09:01:02 2015 -0300
+
+    gitignore
+
+[33mcommit 0f63f6c4d412949bcaf5a0fb9d55220ead43af2f[m
+Merge: 7712406 212ba94
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Thu Sep 3 08:50:40 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit 77124063729f62d6d8c0da641251a736674d5fb2[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Thu Sep 3 08:46:15 2015 -0300
+
+    fix
+
+[33mcommit 212ba940c839e8e7303b925fbca84e008f9b1200[m
+Merge: 6700cb3 563c87a
+Author: Rodrigo Gliksberg <xdieamd@gmail.com>
+Date:   Thu Sep 3 08:36:10 2015 -0300
+
+    Fusionado master con development
+
+[33mcommit 6700cb36ca4111849a63b7880b9fb8898baa5068[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Wed Sep 2 18:17:40 2015 -0300
+
+    commit ignore
+
+[33mcommit b8b445444633fbea99f9866d9d854f87ce0f21dc[m
+Merge: 7ed1cfc 61ee7a5
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Wed Sep 2 18:02:28 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit 7ed1cfcb64c5360a50e63ed81eab856c804aac04[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Wed Sep 2 18:01:40 2015 -0300
+
+    fix gitignore NO BORRAR
+
+[33mcommit 61ee7a5b1bcf3f0a8d5f57662a65c72a46f40d6b[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 17:15:13 2015 -0300
+
+    quita matriculas inhabilitada del acta volante
+
+[33mcommit a9c2d38c0abe6882d905896ede6e6332a05917de[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 17:02:56 2015 -0300
+
+    config no esta ignorado????
+
+[33mcommit 4ba72420325575f1d2e6dc195741aeaac1884829[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 13:06:14 2015 -0300
+
+    regenera el archivo
+
+[33mcommit c25c0b662e18ea156909f420b38ec5220811a61f[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 13:06:07 2015 -0300
+
+    regenera el archivo
+
+[33mcommit 669e923984707009a3c5ca04496e527e7fae0a1b[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 13:05:59 2015 -0300
+
+    regenera el archivo
+
+[33mcommit bdf43b8734f73953ada85c402335815eba5e536d[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 13:01:48 2015 -0300
+
+    regenera el archivo
+
+[33mcommit c5e3a5e3afb9434d939b02ba027e4c0b4d1d15ec[m
+Merge: 4e0896e 94931a8
+Author: unknown <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 11:59:32 2015 -0300
+
+    lenguage en
+
+[33mcommit 4e0896eb741350272fdf941316bf7da1c6c28e97[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Wed Sep 2 11:46:59 2015 -0300
+
+    lang en ingles
+
+[33mcommit 94931a81bd9b79e3c9e06342d2e7bb864074765a[m
+Author: martin <martin@martin>
+Date:   Wed Sep 2 10:24:57 2015 -0300
+
+    Agregado de correo en la reimpresion de matricula
+
+[33mcommit 563c87aa18c4200a80f9631a275aae98e1a2906c[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Wed Sep 2 11:44:00 2015 +0000
+
+    README.md edited online with Bitbucket
+
+[33mcommit f0f81275e90ac76d6146ab387052715b3bacfdfe[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 17:51:37 2015 -0300
+
+    cambios modelos facturas rosario
+
+[33mcommit 923749d6455389f8c59ab73298ee3f5fc362af7f[m
+Merge: c25f57a 992dd36
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Tue Sep 1 17:28:07 2015 -0300
+
+    Merge branch 'development' of https://bitbucket.org/igasistemas/iga-cloud into development
+
+[33mcommit c25f57a69e3da0f1b1cead60f2e823cfdd76e259[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Tue Sep 1 16:56:49 2015 -0300
+
+    Se corrige error al filtrar por fecha en reportes.
+
+[33mcommit 00aa28aa79db91bc118ba960ff1604ce32c1627e[m
+Author: Rodrigo Gliksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 13:42:53 2015 +0000
+
+    README.md edited online with Bitbucket
+
+[33mcommit 992dd36b999dc7139ec99c9182c1cd28be662102[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 10:17:46 2015 -0300
+
+    config
+
+[33mcommit 688710bfb9f9cf739154b0ef2dbf66561ff4562b[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 10:11:49 2015 -0300
+
+    config
+
+[33mcommit a532e3b3440ca7c9b72a1d9284b147a3e4979e72[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 10:06:15 2015 -0300
+
+    nuevo commit por cagada del ignore
+
+[33mcommit d7b00f98d5a5ee772426e995886d0bbd867ece00[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 09:52:14 2015 -0300
+
+    langs
+
+[33mcommit 5c37233330afede694a8626be97d970a08357840[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 09:31:19 2015 -0300
+
+    prueba
+
+[33mcommit 2adb34532c8624b6468afac8de184701cf59b14b[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 09:18:45 2015 -0300
+
+    generla ignore
+
+[33mcommit 94e2a341edcea56ebcbc374af4761c49fd947df8[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 09:06:41 2015 -0300
+
+    ignore
+
+[33mcommit 734ab56e4d45f419c650d7c37550f9bf3c98893b[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 08:59:51 2015 -0300
+
+    ignore config
+
+[33mcommit be42bfef72a92ee9b3008215194bc3e30d9743fa[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 08:57:38 2015 -0300
+
+    cambios gitigonre
+
+[33mcommit e9ea9cd7a7bfc4b7c621797971f6030efdf95fa3[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 08:56:10 2015 -0300
+
+    gitignore
+
+[33mcommit 7e893622de05a0d4e4b8333482f45a7db89cb82f[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 08:51:10 2015 -0300
+
+    gitigno
+
+[33mcommit 6d5f7a1ff7ca4be9b6f7cd13e856b8b2e042aa76[m
+Author: Rodrigo GLiksberg <xdieamd@gmail.com>
+Date:   Tue Sep 1 08:48:50 2015 -0300
+
+    gitignore
+
+[33mcommit 86b003ff476a8bcf065d150e6092b5e1056448f1[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Mon Aug 31 15:44:22 2015 -0300
+
+    Se rompía al mostrar la cuenta corriente de un alumno cuando la matrícula no existía (al buscar el concepto de la linea de ctacte). Se agregó un valor por defecto para estos casos.
+
+[33mcommit 79fbd579e58ce740135eba14de8e2d2b15c4ceda[m
+Merge: 0acd5ad 3d9181a
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Aug 31 14:20:48 2015 -0300
+
+    Merge iga-cloud-miami into development
+
+[33mcommit 0acd5ad9d2cd2fca338aeba83b285c78238e1bb2[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Aug 31 13:10:20 2015 -0300
+
+    add function setfilialClasesPropiedades
+
+[33mcommit 3d9181a4a15bae89f628da25ea6dc98d34cc964c[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Aug 31 12:53:53 2015 -0300
+
+    add function guardar_materias_clases
+
+[33mcommit 80ccded960faae38dcbdc9917289d5486ae44a0e[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Aug 31 12:53:35 2015 -0300
+
+    add function guardar_materias_clases
+
+[33mcommit 08d7cc046086e8820d64ff8d3690417c2233a495[m
+Author: sistemas2 <sistemas2@SISTEMAS3.franquicias.com>
+Date:   Mon Aug 31 08:59:43 2015 -0300
+
+    test de commit en branch origin/iga-cloud-miami
+
+[33mcommit b652cccd3a81817ccffa27e0768b9098b7e613fe[m
+Merge: eb97c5f 899c563
+Author: Rodrigo Gliksberg <xdieamd@gmail.com>
+Date:   Fri Aug 28 18:05:37 2015 -0300
+
+    Fusionado master con iga-cloud-miami
+
+[33mcommit 899c563008ace5e9ff42d1d1c6717fd176e041e3[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Fri Aug 28 18:02:59 2015 -0300
+
+    gitignore
+
+[33mcommit eb97c5f56b8d8401a1e55bb13abd226715b951ed[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Fri Aug 28 17:49:50 2015 -0300
+
+    Modificaciones en /.htaccess y se creó el archivo /.gitignore
+
+[33mcommit f2bf820479686ba20ab33fbab48ead916b01b045[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Fri Aug 28 17:37:05 2015 -0300
+
+    Upload del proyecto completo
+
+[33mcommit ef687e7edc91534c0c80c7dfcfe0abdffe07830f[m
+Author: Hernán Melia <sistemas2@iga-la.net>
+Date:   Fri Aug 28 16:07:07 2015 -0300
+
+    Archivo con contribuidores al proyecto. Cada uno debería agregar su nombre.

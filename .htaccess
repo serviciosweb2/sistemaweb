@@ -1,0 +1,24 @@
+# Customized error messages.
+ErrorDocument 404 /index.php
+# Set the default handler.
+DirectoryIndex index.php
+
+<IfModule mod_setenvif.c>
+   SetEnvIfNoCase Host sistema\.igacloud\.net$ CI_ENV=prod
+
+   SetEnvIfNoCase Host dev\.igacloud\.net$ CI_ENV=dev
+
+   SetEnvIfNoCase Host miami\.igacloud\.net$ CI_ENV=prod
+
+   SetEnvIfNoCase Host devmiami\.igacloud\.net$ CI_ENV=dev
+
+   SetEnvIfNoCase Host localhost$ CI_ENV=dev
+</IfModule>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>

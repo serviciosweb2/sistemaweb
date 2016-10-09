@@ -1,0 +1,6 @@
+/nbproject/
+/application/config/*
+/system/
+/.idea
+
+!/application/config/IGA Cloud-googleAPIs.json

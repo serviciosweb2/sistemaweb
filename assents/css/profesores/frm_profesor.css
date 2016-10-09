@@ -1,0 +1,30 @@
+   select+label { 
+   
+  margin-top: 2% !important;
+}
+
+.popover{
+  
+    max-width: 550px!important;
+    width:auto;
+    margin-left: -230px!important;
+  
+  
+
+}
+.popover-content select+label{
+    margin-top: 3% !important;
+}
+
+    #errores{
+   
+   display: none;
+    }
+    
+      label.error{
+        position:absolute !important;
+        margin-top: -1.4% ;
+        color :red !important;
+      }
+
+   

@@ -1,0 +1,17 @@
+     
+   .fancybox-inner{
+        width: 100% !important;
+        height: 150% !important;
+    }
+    .fancy_custom{
+        width: 50% !important;
+        
+        
+    }
+    
+    #contenedorGeneral{
+        background: white;
+    }
+    .chosen-results{
+        max-height: 120px !important;
+    }

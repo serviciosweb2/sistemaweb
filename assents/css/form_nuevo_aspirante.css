@@ -1,0 +1,54 @@
+.error {
+  color:red;
+  margin-top: -1.5%;
+  position:absolute;
+   }
+   .alert{
+       display:none;
+   }
+    .fancybox-inner{
+/*        overflow-y:auto !important;*/
+    }
+  
+    .test{
+        border-color:red !important;
+        box-shadow:0px 0px 5px red !important;
+    }
+    
+    #contenedorGeneral{
+     
+        background:#E6E6E6; 
+        height: 100%;
+    }
+    
+    #modulo_1{
+       padding-left  :  1%;
+    }
+    
+    #modulo_2{
+        padding-right: 1%;
+    }
+   
+    
+    #cabezera{
+        background: white;
+    }
+    
+  
+  
+    
+    #contenedorBotones{
+        margin-top: 3%;
+    }
+    
+   
+    
+    #contenedorObservaciones{
+       padding-right: 1% !important; 
+       padding-left  :  1% !important;  
+    }
+  
+ 
+ 
+    
+   

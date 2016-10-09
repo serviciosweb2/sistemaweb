@@ -1,0 +1,64 @@
+CACHE MANIFEST
+#version 2014:08:13 05:08:27
+
+# archivos explícitos
+
+/assents/js/offline/cobros/cobros.js
+
+
+/assents/js/offline/generalOffline.js
+/assents/theme/assets/js/jquery.gritter.min.js
+/assents/js/librerias/jquery/jquery-2.1.0.min.js
+/assents/theme/assets/css/jquery.gritter.css
+/assents/theme/assets/css/bootstrap.min.css
+/assents/js/general_sistema.js
+/assents/theme/assets/css/ace.min.css
+/assents/theme/assets/css/ace-rtl.min.css
+/assents/theme/assets/css/ace-skins.min.css
+/assents/img/logo.png
+/assents/js/librerias/datatables/jquery.dataTables.1.10.0.js
+/assents/js/librerias/fancy/jquery.fancybox.js
+/assents/css/fancy/jquery.fancybox.css
+/assents/theme/assets/js/chosen.jquery.min.js
+/assents/theme/assets/css/chosen.css
+/assents/theme/assets/js/jquery-ui-1.10.3.full.min.js
+/assents/theme/assets/css/jquery-ui-1.10.3.full.min.css
+/assents/theme/assets/js/jquery.dataTables.bootstrap.js
+/assents/js/librerias/crypt/jquery.crypt.js
+/assents/js/librerias/ajaxchosen/lib/ajax-chosen.js
+/assents/css/vistaPanelGeneral.css
+
+/assents/theme/assets/font/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff
+/assents/theme/assets/font/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff
+/assents/theme/assets/font/FontAwesome.otf
+/assents/theme/assets/font/fontawesome-webfont.eot
+/assents/theme/assets/font/fontawesome-webfont.svg
+/assents/theme/assets/font/fontawesome-webfont.ttf
+/assents/theme/assets/font/fontawesome-webfont.woff
+
+
+
+/assents/theme/assets/img/glyphicons-halflings.png
+
+
+/assents/theme/assets/avatars/profile-pic.jpg
+
+/assents/js/librerias/moment/moment-with-langs.min.js
+/assents/theme/assets/css/font-awesome.min.css
+/assents/theme/assets/css/ace-fonts.css
+/assents/theme/assets/js/ace-extra.min.js
+/assents/theme/assets/js/jquery-2.0.3.min.js
+/assents/theme/assets/js/jquery.mobile.custom.min.js
+/assents/theme/assets/js/bootstrap.min.js
+/assents/theme/assets/js/typeahead-bs2.min.js
+/assents/theme/assets/js/ace-elements.min.js
+/assents/theme/assets/js/ace.min.js
+/assents/js/librerias/jquery-serialize/jquery.serializeJSON.min.js
+/assents/js/librerias/jquery-print/jQuery.print.js
+
+
+
+# si el usuario está offline se mostrará este archivo
+FALLBACK:
+/ /offline/
+/cobros /offline/cobros

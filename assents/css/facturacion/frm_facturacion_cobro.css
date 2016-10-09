@@ -1,0 +1,37 @@
+   .detalle-medio{
+min-height:  150px;
+       margin-top: 20px;
+       margin-bottom:  20px   ;
+    }
+#ctacteTable{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .abonaotroimporte{
+        display: none;
+    } 
+    .abonaresumen{ display: none;}
+   .content-tabla-ctacte{
+        height: 100%;
+        
+    }
+
+    table#ctacteTable th, table#ctacteTable td{
+        padding: 5px ;
+       
+    }
+    .cobro{
+        display:  none;
+        width: 500px;
+    }
+    .factura{
+        
+    
+    }
+    
+    #ctacteTable{
+        
+        
+        min-width: 300px;
+    }

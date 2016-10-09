@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ajax-Chosen: Bootstrapping a Popular jQuery Plugin to add Ajax Autocomplete</title>
+	
+	<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+<!--	<script type="text/javascript" src="/ajax-chosen/dist/chosen/chosen/chosen.jquery.min.js"></script>
+	<script type="text/javascript" src="/ajax-chosen/lib/ajax-chosen.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="/ajax-chosen/dist/chosen/chosen/chosen.css" />
+        -->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+         <script src="lib/ajax-chosen.js"></script>
+        <script src="dist/chosen/chosen.jquery.min.js"></script>
+       
+        <link type="text/css" rel="stylesheet" href="dist/chosen/chosen.min.css" />
+	
+	<style type="text/css">
+	#example1 { width: 300px; }
+    footer { margin-top: 50px; }
+	</style>
+	
+	<script type="text/javascript">
+            $(document).ready(function(){
+                
+        $("#example1").ajaxChosen({
+                    minLength: 3,
+                    queryLimit: 10,
+                    delay: 100,
+                    chosenOptions: {},
+                    searchingText: "buscando...",
+                    noresultsText: "No results.",
+                    initialQuery: false
+                }, function (options, response, event) {
+                    alert('!');
+                    $.getJSON("/ajax-chosen/data.php", {q: options.term}, function (data) {
+
+                        var terms = {};
+
+                        $.each(data, function (i, val) {
+                            terms[i] = val;
+                        });
+
+                        response(terms);
+                    });
+                });
+                
+        });
+//        $(function () {
+//            $("#example1").ajaxChosen({
+//                    minLength: 2,
+//                    queryLimit: 0,
+//                    noresultsText: 'Nothing found for '
+//            },function (options, response) {
+//                $.ajax({
+//                        url: "",
+//                        type: "",
+//                        data: "",
+//                        dataType:"",
+//                        cache:false,
+//                        success:function(respuesta){
+//                            alert(respuesta);
+//                        }
+//                        });
+//                // the plugin asked for items, options contains the term to search for
+////                $.getJSON('/ajax-chosen/data.php', {term: options.term}, function(data) {
+////                    // do filtering / mapping and send the items back to plugin
+////                    response(data);
+////                });
+//            });
+//        });
+	</script>
+</head>
+<body>
+	<h1>Ajax-Chosen: Bootstrapping a jQuery Plugin</h1>
+	
+	<select id="example1" data-placeholder="Search for a state" multiple></select>
+
+    <footer>
+        Examples: <a href="index.html">default</a> <a href="geonames.html">geonames</a> <a href="geobytes.html">geobytes</a>
+    </footer>
+</body>
+</html>

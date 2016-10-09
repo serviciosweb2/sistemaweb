@@ -1,0 +1,3 @@
+php_flag display_errors 1
+#Agregado para que funcione la seccion offline
+AddType text/cache-manifest .manifest

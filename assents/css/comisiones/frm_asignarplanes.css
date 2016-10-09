@@ -1,0 +1,11 @@
+    
+    #contenedorGeneral{
+        background: white;
+    }
+    .chosen-results{
+        max-height: 120px !important;
+    }
+
+    .ms-container{
+        width: 600px!important;
+    }

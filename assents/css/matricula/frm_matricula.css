@@ -1,0 +1,46 @@
+.fancybox-inner{
+        
+        height: auto!important;
+    }
+    
+    .cupoRestante{
+        background: aliceblue;
+    }
+    #contenedorGeneral{
+        height:100%;
+         background:white !important;
+    }
+    .ui-datepicker-trigger{
+    margin-left: 5%;
+    margin-bottom: 8%;
+    }
+    .ui-datepicker-trigger:hover{
+        cursor:pointer;
+    }
+    
+    #errores{
+        display:none;
+        margin-top: 2%;
+    }
+    #modulo-2{
+        border-top: 1px  dashed   lavender; 
+    }
+    
+
+      label.error{
+        position:absolute !important;
+        margin-top: -1.4% !important;
+        color :red !important;
+    }
+    .chosen-results{
+        max-height: 100px !important;
+    }
+.modal{z-index: 98888 !important;}
+.modal-header{
+    max-height: 40px !Important;
+    padding: 5px !important;
+}
+.modal-body{
+    max-height: 700px !Important;
+    overflow: auto !important;
+}

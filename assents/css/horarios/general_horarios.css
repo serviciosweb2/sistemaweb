@@ -1,0 +1,62 @@
+
+
+    .popover{
+     z-index:20;
+
+    width:250px;
+    
+
+    }
+    
+
+    .popover{
+        /*padding: 0px !important;*/
+    }
+    .rot180 {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	rotation: 180deg;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.cuadrado{
+    height: 20px !important;
+    width: 20px !important;
+    vertical-align: top !important;
+    min-height: 20px !important;
+    border-radius: 5px;
+    margin-left: 1% !important;
+}
+
+.cuadrado:hover{
+    /*opacity: 0.6 !important;*/
+    border:1px solid black;
+    /*background: red !important;*/
+    cursor: pointer;
+}
+.menu-salon{
+    float: right;
+}
+    
+
+
+.fc-day-number{
+    
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.feriadoEvent{
+    
+    border: 2px solid black !important;
+}
+
+#menuDerecha .ui-datepicker
+{
+    width: 100%;
+}
+
+#menuDerecha
+{
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+}
