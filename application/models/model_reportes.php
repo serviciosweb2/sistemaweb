@@ -1002,6 +1002,7 @@ class Model_reportes extends CI_Model {
         /* CAMPOS MOSTRAR */
         $nombreApellido = formatearNombreColumnaAlumno();
         //El tercer parametro de setCampo permite la visibilidad del campo
+		//edwyn
         $myReporte->setCampo("codigo", lang("codigo"), true, INTEGER_CRTYPE, array(ES_IGUAL_CRFILTER), false, "alumnos.codigo", null, WHERE_CRMETHOD, 15);
         $myReporte->setCampo("nombre_alumno", $nombreApellido, true, STRING_CRTYPE, array(LIKE_CRFILTER), true, null, null, HAVING_CRMETHOD, 45);
         //correo electronico

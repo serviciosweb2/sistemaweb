@@ -3,6 +3,13 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
+/*
+define("STR_CASE_NORMAL", 1);
+define("STR_CASE_LOWER", 2);
+define("STR_CASE_UPPER", 3);
+define("STR_CASE_UCWORDS", 4);
+define("STR_CASE_UCFIRST", 5);
+*/
 class Model_impresiones extends CI_Model {
 
     private $codigofilial;
@@ -2764,16 +2771,36 @@ class Model_impresiones extends CI_Model {
         return $arrResp;
     }
 
-    function AddPageInforme(&$pdf, $nombreInforme, $imprimirEncabezado = true) {
+    function AddPageInforme(&$pdf, $nombreInforme, $imprimirEncabezado = true, $datosMembrete) {
 
         $pdf->addPage();
+        if ( !empty($datosMembrete) || !empty($datosMembrete["fecha_emesion"]) ) {
+            $this->AddMembreteDerecha($pdf, $datosMembrete);
+        }
         $pdf->SetFont("arial", "BU", 14);
         $pdf->SetMargins(5, 5);
+		
+		//edwyn
         if ($imprimirEncabezado) {
             $pdf->Cell(0, 6, utf8_decode(lang('reportes_de_' . $nombreInforme)), 0, 0, "C");
         }
         $pdf->SetFont("arial", "B", 10);
         $pdf->Ln(12);
+    }
+
+    function AddMembreteDerecha(&$pdf, $datosMembrete) {
+        
+        $pdf->SetFont("arial", "B", 9);
+        $pdf->SetMargins(2, 1);
+        $pdf->Cell(389, 5, utf8_decode(lang("fecha_emision")) . ": " . $datosMembrete["fecha_emision"], 276, 2, "R");
+         
+        $pdf->Cell(388, 5, utf8_decode(lang("periodo")) . ": ".$datosMembrete["periodo"] , 276, 2, "R");
+         
+        $pdf->Cell(374, 5, utf8_decode(lang("usuario")) . ": " . $datosMembrete["usuario"], 276, 2, "R");
+         // daniel
+        $pdf->Ln(8);
+        
+        
     }
 
     function addFooterInforme(&$pdf, $nombreUsuario, $cantidadPaginas = 0) {
@@ -2784,6 +2811,7 @@ class Model_impresiones extends CI_Model {
     }
 
     function imprimir_reporte_factura($cod_usuario, $filtros, $id_impresora, $copias, $currentPage, $pageDisplay, $sSearch, $arrColumsVisibles, $nombreReporte, $sortDir, $sortName, $aplyCommonFilters) {
+        //echo'estamos en imprimir reporte factura con '.$nombreReporte;
         $conexion = $this->load->database($this->codigofilial, true);
         $repetirEncabezado = $this->Model_configuraciones->getValorConfiguracion(null, 'repetirEncabezadoInformes') == 1;
         $this->load->helper('impresiones');
@@ -2850,7 +2878,7 @@ class Model_impresiones extends CI_Model {
             }
             $usuario = $this->session->userdata("nombre");
             $filial = $this->session->userdata("filial");
-            $arrInfo = array(
+            $arrInfo = array(//ENCABEZADO DE CONSULTAS WEBS
                 array("txt" => lang("fecha_emision").": ".date("d/m/Y"), "size" => "8", "align" => "R", "width" => 276, "height" => 4),
                 array("txt" => lang("periodo").": ".$periodo, "size" => "8", "align" => "R", "width" => 276, "height" => 4),
                 array("txt" => lang("usuario").": ".$usuario, "size" => "8", "align" => "R", "width" => 276, "height" => 4)
@@ -2867,7 +2895,8 @@ class Model_impresiones extends CI_Model {
             $exp->setContentHeight(6);
             $exp->setReportTitle($filial['nombre']." - ".lang("reporte_de_consultas_web"));
             $pdf = $exp->exportar(null, true);
-        } else if ($nombreReporte == 'reporte_alumnos_activos_por_comision'){
+        } 
+        else if ($nombreReporte == 'reporte_alumnos_activos_por_comision'){
             $arrWidth = array();
             $arrTitle = array();
             $arrContent = array();
@@ -2920,11 +2949,42 @@ class Model_impresiones extends CI_Model {
 
 
 
-        } else { // ir agregando para reportes mas personalizados que el standar de impresion desde reportes
+        } 
+        else { // ir agregando para reportes mas personalizados que el standar de impresion desde reportes
 
-            $pdf = new PDF_AutoPrint('L', 'mm', 'A4');
+// daniel alumnos
+            $usuario = $this->session->userdata("nombre");
+            //$filial = $this->session->userdata("filial");
+            $arrInfo = array(
+                array("txt" => lang("fecha_emision").": ".date("d/m/Y"), "size" => "8", "align" => "R", "width" => 200, "height" => 4),
+                array("txt" => lang("periodo").": mi periodo", "size" => "8", "align" => "R", "width" => 200, "height" => 4),
+                array("txt" => lang("usuario").": ".$usuario, "size" => "8", "align" => "R", "width" => 200, "height" => 4)
+            );
+
+ 
+
+            $pdf = new PDF_AutoPrint('L', 'mm', array(310,450));
             $pdf->SetAutoPageBreak(true, 1);
+			
             $pdf->AutoPrint(false);
+
+ 
+            // Codigo de encabezado
+            /*foreach ($arrInfo as $info){
+                //$txt = $this->rowFormat($info['txt'], STR_CASE_UCWORDS);
+                $width = isset($info['width']) ? $info['width'] : 0;
+                $fontSize = isset($info['size']) ? $info['size'] : 0;
+                $align = isset($info['align']) ? $info['align'] : "";
+                $height = isset($info['height']) ? $info['height'] : "4";
+                $pdf->SetFont("arial", "", $fontSize);
+                //$pdf->Cell($width, $height, "hollll", 0, 0, $align);
+                $pdf->Cell(30,10,'fjldkjflajflkjlfjaldjkflasj',1,0,'C');
+                $pdf->Ln($height);
+            }*/
+             
+            
+
+
             $width = array();
             $cantCaracteres = 40;
             $MyUsuario = new Vusuarios_sistema($conexion, $cod_usuario);
@@ -2940,12 +3000,32 @@ class Model_impresiones extends CI_Model {
             */
             
             for ($cantCopias = 0; $cantCopias < $copias; $cantCopias++) {
-                $this->AddPageInforme($pdf, $nombreReporte, true);
+                
+                
+// START : agrego el titulo
+ 
+                $datosMembrete = array(
+                        "fecha_emision" => date("d/m/Y"),
+                        "periodo" => "Todas las fechas",
+                        "usuario" => $usuario
+                    );
+                $this->AddPageInforme($pdf, $nombreReporte, true, $datosMembrete);
+                /*$pdf->SetFont("arial", "BU", 8);
+                $pdf->SetMargins(3, 1);
+                $pdf->Cell(400, 1, utf8_decode("mi titulo"), 0, 0, "C");
+                $pdf->SetFont("arial", "B", 10);
+                $pdf->Ln(8);*/
+
+                
+                
+
+
                 foreach ($reporte['columns'] as $key => $columnas) {
                     $width[$key][] = $columnas->Pdfwidth;
                     if (in_array($key, $arrColumsVisibles)) {
                         $pdf->SetFont("arial", "B", 10);
-                        $pdf->Cell($columnas->Pdfwidth, 6, utf8_decode($columnas->display), "LTRB", 0, "L");
+						
+                        $pdf->Cell($columnas->Pdfwidth, 6, utf8_decode($columnas->display), "LTRB", 0, "C");
                     }
                     if ($columnas->acumulable == 1) {
                         $nombreColumnaAcumulable[$key] = array("total_acumulado" => '');
@@ -2976,12 +3056,13 @@ class Model_impresiones extends CI_Model {
                                 }
                             }
 
-                            $pdf->Cell($ancho, 6, utf8_decode(inicialesMayusculas($string)), "LTRB", 0, "L");
+                            $pdf->Cell($ancho, 6, utf8_decode(inicialesMayusculas($string)), "LTRB", 0, "C");
                         }
                     }
                     if ($pdf->GetY() >= 180) {
                         $this->addFooterInforme($pdf, $nombre, $cantidadPaginas);
-                        $this->AddPageInforme($pdf, $nombreReporte, $repetirEncabezado);
+                        $datosMembrete = array();
+                        $this->AddPageInforme($pdf, $nombreReporte, $repetirEncabezado, $datosMembrete);
                     } else {
                         $pdf->Ln();
                     }
@@ -3807,5 +3888,50 @@ class Model_impresiones extends CI_Model {
         }
         return false;
     }
-
+/*
+    private function rowFormat($row, $stringFormatType){
+        if ($this->fieldEncapsulant <> ''){
+            $row = str_replace($this->fieldEncapsulant, '´', $row);
+        }
+        if ($this->fieldSeparator == ';'){
+            $replacement = ',';
+        } else if ($this->fieldSeparator == ','){
+            $replacement = ';';
+        } else {
+            $replacement = '';
+        }
+        $row = str_replace($this->fieldSeparator, $replacement, $row);
+        
+        switch ($stringFormatType) {
+            
+            case STR_CASE_LOWER:
+                $row = strtolower($row);
+                break;
+            
+            case STR_CASE_UPPER:
+                $row = strtoupper($row);
+                if ($this->utfDecode){
+                    $row = self::foramtearParaUTF($row);
+                }
+                break;
+                
+            case STR_CASE_UCWORDS:
+                $row = ucwords(strtolower($row));
+                break;
+            
+            case STR_CASE_UCFIRST:
+                $row = ucfirst(strtolower($row));
+                break;
+            
+            default:
+                break;
+        }
+        if ($this->utfDecode){
+            $row = utf8_decode($row);
+        }
+        $row = $this->fieldEncapsulant.$row.$this->fieldEncapsulant;
+        return $row;
+    }
+        
+*/
 }
