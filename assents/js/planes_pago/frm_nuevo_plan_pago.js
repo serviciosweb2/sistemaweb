@@ -1,4 +1,4 @@
-$('.main_content').ready(function() {
+$('.main_content').ready(function () {
     $.ajax({
         url: BASE_URL + 'planespago/getFinanciacionPlan',
         data: "codigo=" + $("[name=plan_original]").val(),
@@ -61,7 +61,7 @@ function Init() {
                 var _html = '';
                 $.each(respuesta.periodos_plan, function(key, periodos){
                     _html += '<tr>';
-                    if (!muestra_periodos){
+                    if (!muestra_periodos) {
                         var complemento = !actualizar_periodos || seleccion[periodos.cod_tipo_periodo] ? 'checked="true"' : '';
                         _html += '<td>';
                         _html += '<label>';

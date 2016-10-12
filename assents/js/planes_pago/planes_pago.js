@@ -6,7 +6,7 @@ var thead = [];
 var data = '';
 var oTable = '';
 
-$(document).ready(function() {
+$(document).ready(function () {
     init();
 });
 
@@ -19,7 +19,7 @@ function init() {
         sAjaxSource: BASE_URL + "planespago/listar",
         sServerMethod: "POST",
         aaSorting: [[0, "desc"]],
-        fnServerData: function(sSource, aoData, fnCallback) {
+        fnServerData: function (sSource, aoData, fnCallback) {
             var fecha_inicio_desde = $("#div_table_filters").find("[name=fecha_inicio_desde]").val();
             var fecha_inicio_hasta = $("#div_table_filters").find("[name=fecha_inicio_hasta]").val();
             var fecha_vigencia_desde = $("#div_table_filters").find("[name=fecha_vigencia_desde]").val();
@@ -46,7 +46,7 @@ function init() {
             });
         },
         "aoColumnDefs": aoColumnDefs,
-        "fnRowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+        "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
             var baja = aData[6];
             var clase = "";
             var estado = "";
@@ -71,13 +71,13 @@ function init() {
     $(".select_chosen").chosen();
     $("[name=div_table_filters]").hide();
     $("[name=container_menu_filters_temp]").remove();    
-    $("[name=icon_filters]").on("click", function() {
+    $("[name=icon_filters]").on("click", function () {
         $("[name=contenedorPrincipal]").toggle();
         $("[name=div_table_filters]").toggle(300);
         return false;
     });
     
-    $("[name=contenedorPrincipal]").on("mousedown", function() {
+    $("[name=contenedorPrincipal]").on("mousedown", function () {
         $("[name=contenedorPrincipal]").hide();
         $("[name=div_table_filters]").hide(300);
     });
@@ -126,7 +126,7 @@ function init() {
         });
     }
 
-    $('body').on('click', '#menu a', function() {
+    $('body').on('click', '#menu a', function () {
         var accion = $(this).attr('accion');
         var id = $(this).attr('id');
         $('#menu').remove();
@@ -246,14 +246,14 @@ function modificar_plan_pago(codigo){
     });
 }
 
-function nuevo_plan_pago(codigo){
-    $.ajax({
+function nuevo_plan_pago(codigo){//edwyn
+    $. ajax({
         url: BASE_URL + "planespago/frm_nuevo_plan_pago",
         data: {
             codigo: codigo
         },
         type: 'POST',
-        cache: false,
+       cache: false,
         success: function(respuesta) {
             $.fancybox.open(respuesta, {
                 scrolling: 'auto',

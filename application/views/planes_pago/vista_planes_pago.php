@@ -22,26 +22,37 @@
         top: 18px;
         z-index: 1000;
     }
-    
+
     .fecha_date_picker{
         margin: 0 0px !important;
     }
 </style>
-<script src="<?php echo base_url("assents/js/librerias/datatables/jquery.dataTables.min.js")?>"></script>
-<script src="<?php echo base_url('assents/js/planes_pago/planes_pago.js');?>"></script>
-<script src="<?php echo base_url('assents/js/librerias/bootstrap-modal/bootstrap-modalmanager.js')?>"></script>
-<script src="<?php echo base_url('assents/js/librerias/bootstrap-modal/bootstrap-modal.js')?>"></script>
-<link rel="stylesheet" href="<?php echo base_url('assents/css/planes_pago/planes_pago.css')?>"/>
-<link rel="stylesheet" href="<?php echo base_url('assents/css/bootstrap-modal/bootstrap-modal.css')?>"/>
-<link rel="stylesheet" href="<?php echo base_url('assents/css/bootstrap-modal/bootstrap-modal-bs3patch.css')?>"/>
+<script src="<?php echo base_url("assents/js/librerias/datatables/jquery.dataTables.min.js") ?>"></script>
+<script src="<?php echo base_url('assents/js/planes_pago/planes_pago.js'); ?>"></script>
+<script src="<?php echo base_url('assents/js/librerias/bootstrap-modal/bootstrap-modalmanager.js') ?>"></script>
+<script src="<?php echo base_url('assents/js/librerias/bootstrap-modal/bootstrap-modal.js') ?>"></script>
+<script>
+//edwyn
+
+function hola()
+{
+var nombre ='hola';
+alert('saludo '+nombre);
+
+}
+ </script>
+}
+<link rel="stylesheet" href="<?php echo base_url('assents/css/planes_pago/planes_pago.css') ?>"/>
+<link rel="stylesheet" href="<?php echo base_url('assents/css/bootstrap-modal/bootstrap-modal.css') ?>"/>
+<link rel="stylesheet" href="<?php echo base_url('assents/css/bootstrap-modal/bootstrap-modal-bs3patch.css') ?>"/>
 <div class="col-md-12 col-xs-12">
     <div id="areaTablas" class="table-responsive">
-        <?php $tmpl=array ( 'table_open'=>'
+        <?php $tmpl = array('table_open' => '
         <table id="administracionPlanesPago" class="table table-striped table-condensed table-bordered table-hover"
         oncontextmenu="return false" onkeydown="return false" style="width:100% !important;">');
-        $this->table->set_template($tmpl);
-        $this->table->set_heading(array('','', '', '','','','',''));
-        echo $this->table->generate(); ?>
+$this->table->set_template($tmpl);
+$this->table->set_heading(array('', '', '', '', '', '', '', ''));
+echo $this->table->generate();?>
     </div>
 </div>
 <div id="confirmaEliminar" class="modal  fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
@@ -50,10 +61,10 @@
     </div>
     <div class="modal-footer">
         <button type="button" data-dismiss="modal" class="btn">
-            <?php echo lang('cancelar');?>
+            <?php echo lang('cancelar'); ?>
         </button>
         <button type="button" data-dismiss="modal" id="btn-ok-cambio-estado" class="btn btn-primary">
-            <?php echo lang('continuar');?>
+            <?php echo lang('continuar'); ?>
         </button>
     </div>
 </div>
@@ -61,10 +72,10 @@
     <div id="div_table_filters" class="table_filter" name="div_table_filters" style="display: none;">
         <div class="row" style="padding-bottom: 0px;">
             <div class="col-md-6">
-                <?php echo lang("fecha_inicio_desde"); ?>           
+                <?php echo lang("fecha_inicio_desde"); ?>
             </div>
             <div class="col-md-6">
-                <?php echo lang("fecha_inicio_hasta"); ?>            
+                <?php echo lang("fecha_inicio_hasta"); ?>
             </div>
         </div>
         <div class="row">
@@ -110,7 +121,7 @@
                     </span>
                 </div>
             </div>
-        </div>        
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <?php echo lang("curso"); ?>
@@ -120,11 +131,11 @@
             <div class="col-md-12">
                 <select name="filtro_plan_academico" style="width: 300px;" class="select_chosen">
                     <option value="-1">(<?php echo lang("todos"); ?>)</option>
-                    <?php foreach ($arrPlanesAcademicos as $plan){ ?> 
+                    <?php foreach ($arrPlanesAcademicos as $plan) {?>
                     <option value="<?php echo $plan['codigo'] ?>">
-                        <?php echo $plan["nombre_".get_idioma()] ?>
+                        <?php echo $plan["nombre_" . get_idioma()] ?>
                     </option>
-                    <?php } ?>
+                    <?php }?>
                 </select>
             </div>
         </div>
@@ -157,7 +168,7 @@
             <div class="col-md-12">
                 <?php echo lang("estado"); ?>
             </div>
-        </div>        
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <select name="filtro_baja" style="width: 300px;" class="select_chosen">
